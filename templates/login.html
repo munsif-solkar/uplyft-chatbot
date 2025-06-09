@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md space-y-6">
+      <div class="text-center">
+        <h1 class="text-2xl font-bold text-blue-600">Welcome to Uplyft Chatbot</h1>
+        <p class="text-gray-500 text-sm mt-2">Please login to continue</p>
+      </div>
+  
+      <form id="login-form" class="space-y-4" method="post">
+        <div>
+          <label class="block text-gray-700 text-sm mb-1" for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="admin" required
+            class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm mb-1" for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="1234" required
+            class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <button type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-200">Login</button>
+      </form>
+  
+    </div>
+    </body>
+</html>
